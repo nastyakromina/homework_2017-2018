@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset='utf-8'>
+	    <title>Project2</title>
+    </head>
+    <body>
+      <p><b>Добрый день, дорогие участники опроса!</b><br><br>
+      Просим Вас поучаствовать в нашем социолингвистичеком исследовании!<br>
+      Для прохождения опроса Вам просто надо будет выбрать вариант ударения. Не стоит задумываться о том, какой вариант правильный, нам важно то, как говорите Вы!<br>
+      Опрос не займет у Вас больше 3-х минут.</p><br><br>
+      <form method='GET' action="/hi">
+        <b>1) </b>КлАла<input type='radio' name='kl' value='klAla'> - КлалА<input type='radio' name='kl' value='klalA'><br><br>
+        <b>2) </b>ОбнЯлись<input type='radio' name='ob' value='obnAlis'> - ОбнялИсь<input type='radio' name='ob' value='obnalIs'><br><br>
+        <b>3) </b>ОблЕгчить<input type='radio' name='obl' value='oblEgchit'> - ОблегчИть<input type='radio' name='obl' value='oblegchIt'><br><br>
+        <p><b>Пожалуйста, укажите свои личные данные:</b></p><br>
+        Пол:
+        <input type='radio' name='sex' value='female'>Женский
+        <input type='radio' name='sex' value='male'>Мужской<br><br>
+        Образование:
+        <input type='radio' name='education' value='mid'>Среднее
+        <input type='radio' name='education' value='mid_prof'>Среднее специальное
+        <input type='radio' name='education' value='high_nf'>Неоконченное высшее
+        <input type='radio' name='education' value='high'>Высшее<br><br>
+	Возраст:
+	<input type='text' size=3 maxlength=3 name='age' value=''><br><br>
+	Родной язык:
+	<input type='text' size=30 maxlength=30 name='language' value=''><br><br>
+	Место рождения:
+	<input type='text' size=50 maxlength=50 name='town_n' value=''><br><br>
+	Место проживания:
+	<input type='text' size=50 maxlength=50 name='town_l' value=''><br><br>
+        <p><b>Спасибо за участие!</b></p><br>
+        <input type='submit' value='Отправить'>
+      </form>
+   </body>
+</html>
