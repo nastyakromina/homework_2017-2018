@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="windows-1251">
+		<title>Транслитерация</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+    <body>
+	 <div class="container">
+		<ul class="nav nav-tabs">
+				<li><a href="http://127.0.0.1">Главная</a></li>
+				<li><a href="http://127.0.0.1/lenta">Транслитерация Lenta.ru</a></li>
+				<li class="active"><a href="http://127.0.0.1/qst">Вопросы</a></li>
+		 </ul>
+	 </div>
+		<br><br><br>
+		<p align = center>Как бы Вы написали эти слова?</p>
+		<br>
+		<div align = center>
+			<form method='GET' action="/qst">
+			<table>
+				<tr>
+					<td>
+						<li><input type='radio' name='w1' value='f'>Венецъ &nbsp &nbsp
+					</td><td>
+						<input type='radio' name='w1' value='t'>В&#1123;нецъ</li>
+					</td>
+				</tr><tr>
+					<td>
+						<li><input type='radio' name='w2' value='t'>Опрометью &nbsp &nbsp
+					</td><td>
+						<input type='radio' name='w12' value='f'>Опром&#1123;тью</li>
+					</td>
+				</tr><tr>
+					<td>						
+						<li><input type='radio' name='w3' value='f'>Месяц &nbsp &nbsp
+					</td><td>	
+						<input type='radio' name='w3' value='t'>М&#1123;сяц</li>				
+					</td>
+				</tr><tr>
+					<td>						
+						<li><input type='radio' name='w4' value='t'>Село&nbsp &nbsp
+					</td><td>
+						<input type='radio' name='w4' value='f'>С&#1123;ло</li>	
+					</td>
+				</tr><tr>
+					<td>												
+						<li><input type='radio' name='w5' value='t'>М&#1123;шокъ &nbsp &nbsp
+					</td><td>
+						<input type='radio' name='w5' value='f'>Мешокъ</li>	
+					</td>
+				</tr><tr>
+					<td>																		
+						<li><input type='radio' name='w6' value='f'>Полено &nbsp &nbsp
+					</td><td>
+						<input type='radio' name='w6' value='t'>Пол&#1123;но</li>				
+					</td>
+				</tr><tr>
+					<td>																		
+						<li><input type='radio' name='w7' value='f'>Тесный &nbsp &nbsp
+					</td><td>
+						<input type='radio' name='w7' value='t'>Т&#1123;сный</li>
+					</td>
+				</tr><tr>
+					<td>																		
+						<li><input type='radio' name='w8' value='t'>Песня &nbsp &nbsp
+					</td><td>
+						<input type='radio' name='w8' value='f'>П&#1123;сня</li>
+					</td>
+				</tr><tr>
+					<td>																		
+						<li><input type='radio' name='w9' value='f'>Медь &nbsp &nbsp
+					</td><td>
+						<input type='radio' name='w9' value='t'>М&#1123;дь</li>
+					</td>
+				</tr><tr>
+					<td>																		
+						<li><input type='radio' name='w10' value='t'>Пена &nbsp &nbsp
+					</td><td>
+						<input type='radio' name='w10' value='f'>П&#1123;на</li>
+					</td>
+				</tr>
+				</table>
+					<br><br><br>
+					<input type='submit' value='Посмотреть результат тестирования'>
+				</form>
+		</div>
+		<br><br><br>
+		<div align = center>
+			<p> {{rez}} </p>
+		</div>
+		<br><br><br>
+	<div class="row">     
+		 <p> ©  Кромина Анастасия,  2017 | Все права защищены.</p>
+	</div>
+<!-- javascript -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+	</body>
+</html>

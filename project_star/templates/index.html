@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Транслитерация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+ <div class="container">
+  	<ul class="nav nav-tabs">
+        	<li class="active"><a href="http://127.0.0.1">Главная</a></li>
+        	<li><a href="http://127.0.0.1/lenta">Транслитерация Lenta.ru</a></li>
+        	<li><a href="http://127.0.0.1/qst">Вопросы</a></li>
+     </ul>
+ <!-- строка 1 -->
+<div class="row">
+	<div class="col-lg-6 col-sm-8">
+		<h1>Дореволюционная орфография!</h1>
+		<p>Этот сайт разработан в учебных целях и служит для ознакомления с правописанием слов в дореволюционной Росии.</p>
+		<p>На этом сайте показывается погода в столице Македонии, поскольку славянская письменность была разработана на основемакедонских диалектов.
+		<p>(Столица Македонии - город Скопье)</p>
+	</div>	
+	<div class="col-lg-6 col-sm-4">
+		<img src="/static/img/ete.jpg" alt="">
+	</div>
+</div>
+	<div align = center>
+		<p><h1>Погода в Скопье</h1></p>
+		<p><h1>{{ weather }}</h1></p>
+	</div>
+	<div align = center>
+		<p><h2>Посмотреть транслитерацию Lenta.ru</h2></p>
+	</div>	
+	<div align = center>
+		<form method='GET' action="/lenta">
+        <input type='submit' value='Транслитерация lenta.ru'>
+		</form>
+	</div>
+	<div align = center>
+		<p><h2>Хотите перевести слово?</h2></p>
+	</div>	
+	<div align = center>
+		<form method='GET' action="/">
+		<p>Введите слово
+		<input type='text' size=30 maxlength=100 name='wrd' value=''><br><br></p>
+		<p> {{rezult }} </p>
+        <input type='submit' value='Посмотреть результат'>
+      </form>
+	</div>
+
+	<div align = center>
+		<p><h2>Здесь можно проверить себя</h2></p>
+	</div>	
+	<div align = center>
+		<form method='GET' action="/qst">
+        <input type='submit' value='Перейти на тестовую страницу'>
+      </form>
+	</div>
+<div class="row">     
+	 <p> ©  Кромина Анастасия,  2017 | Все права защищены.</p>
+</div>
+
+</div>
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>
