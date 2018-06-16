@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="windows-1251">
+    <title>Замена персонажей</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+ <div class="container">
+  	<ul class="nav nav-tabs">
+        	<li class="active"><a href="http://127.0.0.1">Главная</a></li>
+     </ul>
+ <!-- строка 1 -->
+	<div align = center>
+		<p><h1>Замена персонажей!</h1></p>
+	</div>
+
+	<div align = center>
+	<form method='GET' action="/final_text">
+		<p>Для каждого персонажа, найденного в Вашем тексте, придумайте новое имя. Если хотите оставить имя прежним - введите его же. После заполнения всей формы, нажмите кнопку "Оправить список имён".</p>
+		{% for i in rezult %}
+		<p> {{ i }} <input type='text' size=50 maxlength=50 name={{ i }} value=''><p>
+		{% endfor %}
+	<h1><input type='submit' value='Отправить список имён'></h1>
+	</form>
+	</div>	
+<div class="row">     
+	 <p> ©  Кромина Анастасия,  2018 | Все права защищены.</p>
+</div>
+
+</div>
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>
